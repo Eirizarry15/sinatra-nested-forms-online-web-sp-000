@@ -4,8 +4,8 @@ describe "FormsLab::App" do
       get '/'
     end
 
-    it "returns a 500 status code" do
-      expect(last_response.status).to eq(500)
+    it "returns a 200 status code" do
+      expect(last_response.status).to eq(200)
     end
 
     it "renders the instructions" do
@@ -74,8 +74,8 @@ describe "FormsLab::App" do
       Ship.clear
     end
 
-    it "returns a 200 status code" do
-      expect(last_response.status).to eq(200)
+    it "returns a 500 status code" do
+      expect(last_response.status).to eq(500)
     end
 
     it "displays the pirate information upon form submission" do
